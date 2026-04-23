@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div class="container text-center">
+    <h1>Contact Us</h1>
+    <p>We’re here to help you find your perfect home</p>
+  </div>
+</section>
+
+<!-- CONTACT DETAILS -->
+<section class="contact-section">
+  <div class="container">
+
+    <div class="row">
+
+      <!-- LEFT: MESSAGE -->
+      <div class="col-md-6">
+        <p class="section-subtitle-a">GET IN TOUCH</p>
+        <h2 class="contact-title">We’re Always Within Reach</h2>
+
+        <p class="contact-text">
+          Whether you’re exploring options or ready to take the next step,
+          our team is here to assist you at every stage.
+        </p>
+
+        <p class="contact-text">
+          Reach out to us through any of the channels below—we’ll respond promptly.
+        </p>
+      </div>
+
+      <!-- RIGHT: DETAILS -->
+      <div class="col-md-6">
+        <div class="contact-info">
+
+          <div class="contact-item">
+            <h5>Phone</h5>
+            <p><a href="tel:+919846078549">+91 9846078549</a></p>
+            <p><a href="tel:+919447428526">+91 9447428526</a></p>
+            <p><a href="tel:+919400360562">+91 9400360562</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h5>Email</h5>
+            <p><a href="mailto:info@sradha.com">info@sradhaconstructions.com</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h5>Office</h5>
+            <p>A32, Aishwarya Nagar,<br> Kesavadasapuram,<br>
+                Thiruvananthapuram,<br> Kerala, 
+                India
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h5>Connect</h5>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SIMPLE TRUST SECTION -->
+<section class="contact-trust text-center">
+  <div class="container">
+    <h2>Simple. Transparent. Responsive.</h2>
+    <p>
+      We believe communication should be effortless. Whether it’s a quick enquiry or a detailed discussion,
+      we ensure every interaction is handled with clarity and care.
+    </p>
+  </div>
+</section>
+<footer class="footer-section">
+
+  <div class="container">
+    <div class="row">
+
+      <!-- LOGO + ABOUT -->
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/footerlogo.png') }}" class="footer-logo">
+        <p class="footer-text">
+          Sradha Constructions is committed to quality, trust and care.
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-2">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- LOCATION -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Our Office</h5>
+        <p class="footer-text">A32, Aishwarya Nagar,<br> Kesavadasapuram,<br>
+          Thiruvananthapuram,<br> Kerala, 
+          India
+        </p>
+        <p class="footer-text">
+           +91 9846078549<br>+91 9400360562<br>+91 9447428526<br>
+           info@sradha.com
+        </p>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Connect With Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom text-center mt-4">
+      <p>© 2026 Sradha Constructions. All rights reserved.</p>
+    </div>
+
+  </div>
+
+</footer>
+
+{% endblock %}

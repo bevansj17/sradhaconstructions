@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO CAROUSEL -->
+<div id="tatvaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='images/hero1.png') }}" class="d-block w-100 hero-img">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='images/hero2.png') }}" class="d-block w-100 hero-img">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='images/hero3.png') }}" class="d-block w-100 hero-img">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#tatvaCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#tatvaCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- OVERVIEW -->
+<section class="project-overview">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IMAGE -->
+      <div class="col-md-6">
+        <div class="project-image-wrapper">
+          <img src="{{ url_for('static', filename='images/apt1.png') }}" class="project-image">
+        </div>
+      </div>
+
+      <!-- DETAILS -->
+      <div class="col-md-6">
+
+        <p class="section-subtitle">PROJECT OVERVIEW</p>
+
+        <h2 class="project-title">Designed for Modern Living</h2>
+
+        <p class="project-description">
+          Sradha TATVA offers a collection of 16 thoughtfully designed residential units,
+          combining functionality, comfort, and modern architectural design.
+        </p>
+
+        <div class="project-highlights">
+          <span>16 Units</span>
+          <span>1, 2 & 3 BHK</span>
+          <span>Prime Location</span>
+        </div>
+
+        <div class="mt-4">
+          <a href="{{ url_for('static', filename='docs/brochure.pdf') }}" class="project-btn" download>
+            Download Brochure
+          </a>
+
+          <a href="{{ url_for('static', filename='docs/unitplan.pdf') }}" class="project-btn-outline" download>
+            Download All Plans
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="amenities-section">
+  <div class="container">
+
+    <p class="section-subtitle text-center">AMENITIES</p>
+    <h2 class="section-title text-center">Designed for Comfort & Convenience</h2>
+
+    <div class="row mt-5 align-items-center">
+
+      <div class="col-md-6">
+        <div class="about-features">
+
+          <div class="feature-item"><p>Fitness Centre</p></div>
+          <div class="feature-item"><p>24/7 Security</p></div>
+          <div class="feature-item"><p>Kids' Play Area</p></div>
+          <div class="feature-item"><p>Dedicated Parking</p></div>
+          <div class="feature-item"><p>Solar Powered Backup</p></div>
+
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/hero1.png') }}" class="img-fluid rounded">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FLOOR PLANS -->
+<section class="floor-plans">
+  <div class="container text-center">
+
+    <p class="section-subtitle">UNIT PLANS</p>
+    <h2 class="section-title">Explore Floor Plans</h2>
+
+    <div class="row mt-5 g-4">
+
+      <!-- 1 BHK -->
+      <div class="col-md-6">
+        <div class="plan-card">
+          <img src="{{ url_for('static', filename='images/unitcdash.png') }}" onclick="openImage(this.src)">
+          <p>1 BHK</p>
+        </div>
+      </div>
+
+      <!-- 2 BHK - 1 -->
+      <div class="col-md-6">
+        <div class="plan-card">
+          <img src="{{ url_for('static', filename='images/unitb.png') }}" onclick="openImage(this.src)">
+          <p>2 BHK</p>
+        </div>
+      </div>
+
+      <!-- 2 BHK - 2 -->
+      <div class="col-md-6">
+        <div class="plan-card">
+          <img src="{{ url_for('static', filename='images/unitc.png') }}" onclick="openImage(this.src)">
+          <p>2 BHK</p>
+        </div>
+      </div>
+
+      <!-- 2 BHK - 3 -->
+      <div class="col-md-6">
+        <div class="plan-card">
+          <img src="{{ url_for('static', filename='images/unitd.png') }}" onclick="openImage(this.src)">
+          <p>2 BHK</p>
+        </div>
+      </div>
+
+      <!-- 3 BHK - 1 -->
+      <div class="col-md-6">
+        <div class="plan-card">
+          <img src="{{ url_for('static', filename='images/unitddash.png') }}" onclick="openImage(this.src)">
+          <p>3 BHK</p>
+        </div>
+      </div>
+
+      <!-- 3 BHK - 2 -->
+      <div class="col-md-6">
+        <div class="plan-card">
+          <img src="{{ url_for('static', filename='images/unita.png') }}" onclick="openImage(this.src)">
+          <p>3 BHK</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DOWNLOAD BUTTON -->
+    <div class="mt-4">
+      <a href="{{ url_for('static', filename='docs/all-plans.pdf') }}" class="project-btn" download>
+        Download All Unit Plans
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="close-btn">&times;</span>
+  <img id="modalImg">
+</div>
+
+<!-- AREA DETAILS -->
+<section class="area-section">
+  <div class="container text-center">
+
+    <p class="section-subtitle">AREA DETAILS</p>
+    <h2 class="section-title">Space That Matters</h2>
+
+    <div class="area-image-wrapper">
+      <img src="{{ url_for('static', filename='images/areaplan.png') }}">
+    </div>
+
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section">
+  <div class="container text-center">
+
+    <p class="section-subtitle">LOCATION</p>
+    <h2 class="section-title">Strategically Located</h2>
+
+    <div class="map-container mt-4">
+      <iframe 
+        src="https://www.google.com/maps?q=Sradha Tatva&output=embed"
+        width="100%" height="400" style="border:0;" allowfullscreen="">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="project-ctaa text-center">
+  <div class="container">
+    <h2>Only Limited Units Available</h2>
+    <p>Book your site visit today and experience Sradha TATVA firsthand.</p>
+    <a href="tel:+919XXXXXXXXX" class="project-btna">Call Now</a>
+  </div>
+</section>
+
+<footer class="footer-section">
+
+  <div class="container">
+    <div class="row">
+
+      <!-- LOGO + ABOUT -->
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/footerlogo.png') }}" class="footer-logo">
+        <p class="footer-text">
+          Sradha Constructions is committed to quality, trust and care.
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-2">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- LOCATION -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Our Office</h5>
+        <p class="footer-text">A32, Aishwarya Nagar,<br> Kesavadasapuram,<br>
+          Thiruvananthapuram,<br> Kerala, 
+          India
+        </p>
+        <p class="footer-text">
+           +91 9846078549<br>+91 9400360562<br>+91 9447428526<br>
+           info@sradha.com
+        </p>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Connect With Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom text-center mt-4">
+      <p>© 2026 Sradha Constructions. All rights reserved.</p>
+    </div>
+
+  </div>
+
+</footer>
+{% endblock %}

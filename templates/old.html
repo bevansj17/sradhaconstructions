@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="projects-hero">
+  <div class="container text-center">
+    <h1>Our Completed Projects</h1>
+    <p>A track record built on trust, quality, and consistency</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="projects-intro">
+  <div class="container text-center">
+    <p class="section-subtitle-a">OUR WORK</p>
+    <h2 class="section-title">A Legacy of Reliable Construction</h2>
+
+    <p class="intro-text">
+      Over the years, Sradha Constructions has successfully delivered multiple residential projects,
+      each reflecting our commitment to quality and attention to detail.
+    </p>
+
+    <p class="intro-text">
+      These completed homes stand as a testament to our promise of building spaces that last.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="projects-gallery">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- REPEAT THIS BLOCK FOR EACH IMAGE -->
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old1.png') }}">
+        </div>
+        <p class="project-caption">Kesavadasapuram, Thiruvananthapuram</p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old2.png') }}">
+        </div>
+        <p class="project-caption">Ulloor, Thiruvananthapuram</p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old3.png') }}">
+          <p class="project-caption">Nedumangad, Thiruvananthapuram</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old4.png') }}">
+        </div>
+        <p class="project-caption">Nedumangad, Thiruvananthapuram</p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old5.png') }}">
+        </div>
+        <p class="project-caption">Nedumangad, Thiruvananthapuram</p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old6.png') }}">
+        </div>
+        <p class="project-caption">Kesavadasapuram, Thiruvananthapuram</p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old7.png') }}">
+        </div>
+        <p class="project-caption">Medical College, Thiruvananthapuram</p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old8.png') }}">
+        </div>
+        <p class="project-caption">Kesavadasapuram, Thiruvananthapuram</p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old9.png') }}">
+        </div>
+        <p class="project-caption">Kesavadasapuram, Thiruvananthapuram</p>
+      </div>
+    
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/old10.png') }}">
+        </div>
+        <p class="project-caption">Nedumangad, Thiruvananthapuram</p>
+      </div>
+        <!-- Add up to old10.jpg, old11.jpg -->
+
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="projects-map">
+  <div class="container text-center">
+
+    <p class="section-subtitle-a">PROJECT LOCATIONS</p>
+    <h2 class="section-title">Where We’ve Built</h2>
+
+    <p class="map-text">
+      Our projects are spread across well-connected and growing neighborhoods,
+      ensuring accessibility and long-term value.
+    </p>
+
+    <div class="map-wrapper">
+      <img src="{{ url_for('static', filename='images/map.png') }}" class="map-image">
+    </div>
+
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="projects-closing text-center">
+  <div class="container">
+    <h2>Built with Responsibility. Delivered with Care.</h2>
+    <p>
+      Each completed project reflects our dedication to creating homes that people can rely on.
+    </p>
+  </div>
+</section>
+<footer class="footer-section">
+
+  <div class="container">
+    <div class="row">
+
+      <!-- LOGO + ABOUT -->
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/footerlogo.png') }}" class="footer-logo">
+        <p class="footer-text">
+          Sradha Constructions is committed to quality, trust and care.
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-2">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- LOCATION -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Our Office</h5>
+        <p class="footer-text">A32, Aishwarya Nagar,<br> Kesavadasapuram,<br>
+          Thiruvananthapuram,<br> Kerala, 
+          India
+        </p>
+        <p class="footer-text">
+           +91 9846078549<br>+91 9400360562<br>+91 9447428526<br>
+           info@sradha.com
+        </p>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Connect With Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom text-center mt-4">
+      <p>© 2026 Sradha Constructions. All rights reserved.</p>
+    </div>
+
+  </div>
+
+</footer>
+
+{% endblock %}

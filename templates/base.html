@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Sradha Constructions</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top px-4">
+  <div class="container-fluid">
+
+    <!-- LOGO (LEFT) -->
+    <a class="navbar-brand" href="/">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+    </a>
+
+    <!-- TOGGLER (MOBILE) -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU (RIGHT SIDE) -->
+    <div class="collapse navbar-collapse" id="nav">
+      
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown">
+            Projects
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/tatva">Sradha TATVA</a></li>
+            <li><a class="dropdown-item" href="/old">Previous Projects</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+      </ul>
+
+      <!-- CALL BUTTON -->
+      <a href="tel:+919447428526" class="btn btn-primary ms-3">
+         Call Now
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+<div style="margin-top:80px"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+{% block content %}{% endblock %}
+
+<!-- WhatsApp Button -->
+
+<script>
+function openImage(src) {
+  document.getElementById("imageModal").style.display = "block";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+</body>
+</html>
