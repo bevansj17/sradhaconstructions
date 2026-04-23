@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request, redirect
-
+from flask import Flask, render_template, request, redirect, send_from_directory
+import os
 app = Flask(__name__)
 
 @app.route('/')
@@ -32,13 +32,19 @@ def contact():
         return redirect('/')
     return render_template('contact.html')
 
-@app.route('/robots.txt')
-def robots():
-    return send_from_directory('static', 'robots.txt')
-
 @app.route('/sitemap.xml')
 def sitemap():
-    return send_from_directory('static', 'sitemap.xml')
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'sitemap.xml'
+    )
+
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'robots.txt'
+    )
 
 if __name__ == '__main__':
     app.run(debug=True)
