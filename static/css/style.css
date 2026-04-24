@@ -13,7 +13,7 @@ header {
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 5px;
     text-decoration: none;
 }
 
@@ -137,7 +137,7 @@ nav a {
     margin-right: 70px; /* pushes menu to the right */
 }
 .navbar-nav .nav-item {
-    margin: 0 18px;   /* space between items */
+    margin: 0 10px;   /* space between items */
 }
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -202,7 +202,7 @@ nav a {
 }
 
 .carousel-caption h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 }
 
@@ -788,7 +788,7 @@ nav a {
 }
 
 .area-image-wrapper img {
-    width: 95%;
+    width: 85%;
     border-radius: 12px;
 }
 
@@ -866,4 +866,344 @@ nav a {
 .project-btna:hover {
     background: #c9a96e;
     color: black;
+}
+.navbar {
+    padding: 8px 20px !important;   /* smaller height */
+}
+.nav-link {
+    font-size: 17px;   /* was ~16–18 */
+    font-weight: 500;
+}
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo {
+    height: 62px;   /* try 40–50px */
+}
+.navbar .btn {
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.navbar-nav {
+    gap: 10px;
+}
+.section-subtitle-a {
+    font-size: 16px;       /* smaller, more subtle */
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 30px;       /* reduce from ~36–40 */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-box h4 {
+    font-size: 16px;       /* was ~18–20 */
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.feature-box p {
+    font-size: 14px;       /* cleaner readability */
+    line-height: 1.6;
+    color: #555;
+}
+/* Subtitle */
+.project-subtitle {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #ffb936;
+}
+
+/* Title */
+.project-title {
+    font-size: 32px;   /* reduce from ~38–42 */
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Description */
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 90%;
+}
+
+/* Highlights */
+.project-highlights span {
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-right: 8px;
+}
+.project-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+}
+.featured-project {
+    padding: 80px 0;
+}
+
+.project-highlights {
+    margin: 15px 0;
+}
+
+/* Subtitle */
+.about-subtitle {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #ffb936;
+}
+
+/* Title */
+.about-title {
+    font-size: 30px;   /* reduce from ~36–40 */
+    font-weight: 600;
+    margin: 10px 0 15px;
+    max-width: 85%;
+}
+
+/* Paragraphs */
+.about-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 10px;
+    max-width: 90%;
+}
+.about-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer-section {
+    background: #111;
+    color: #ccc;
+    padding: 60px 0 30px;   /* reduced */
+}
+.footer-logo {
+    height: 100px;   /* smaller + cleaner */
+    width: 100px;
+    margin-bottom: 15px;
+}
+.footer-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #aaa;
+}
+.footer-heading {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+.social-icons a {
+    font-size: 18px;
+    color: #aaa;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c8922d;
+}
+.footer-bottom p {
+    font-size: 13px;
+    color: #777;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+}
+
+/* HERO SECTION */
+.about-hero {
+    padding: 70px 0 50px;   /* reduced height */
+    background: #000000;
+}
+
+.about-hero h1 {
+    font-size: 32px;   /* reduce from ~40+ */
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.about-hero p {
+    font-size: 15px;
+    color: #cecccc;
+}
+/* STORY SECTION */
+.about-story {
+    padding: 80px 0;
+}
+
+.about-story .about-title {
+    font-size: 28px;   /* slightly smaller */
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.about-story .about-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 10px;
+    max-width: 90%;
+}
+.about-img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-values {
+    padding: 70px 0;   /* slightly tighter */
+    background: #f8f9fa;   /* optional, matches your theme */
+}
+.about-values .section-subtitle-a {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #f4b135;
+}
+
+.about-values .section-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* Heading */
+.value-box h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* Text */
+.value-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+.value-box {
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.value-box:hover {
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.about-why {
+    padding: 70px 0;
+}
+.about-why .about-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-why .row {
+    align-items: center;
+}
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item {
+    padding: 10px 14px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    margin: 0;
+    color: #555;
+}
+/* Subtitle */
+.section-subtitle {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #f4b135;
+}
+
+/* Title */
+.project-title {
+    font-size: 30px;   /* reduced */
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Description */
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 90%;
+}
+.project-highlights {
+    margin: 12px 0;
+}
+
+
+.project-btn,
+.project-btn-outline {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+.amenities-section {
+    padding: 70px 0;
+    background: #f8f9fa;
+}
+.amenities-section .section-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.amenities-section .feature-item {
+    padding: 10px 14px;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.amenities-section .feature-item p {
+    font-size: 14px;
+    margin: 0;
+    color: #555;
+}
+.amenities-section .feature-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transform: translateY(-2px);
+}
+.amenities-section img {
+    border-radius: 10px;
 }
